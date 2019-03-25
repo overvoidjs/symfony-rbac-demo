@@ -22,8 +22,6 @@ framework:
 rbac:
     firewall_pattern: ^/
     ignore_routes:
-        - app_files
-        - eb22fbb4_upload
         - _twig_error_test
     anonymously_routes:
         - app_index
