@@ -19,7 +19,7 @@ class RoleFixtures extends Fixture
             'app_role_delete',
             'app_user',
             'app_user_new',
-            'app_user_eidt',
+            'app_user_edit',
             'app_user_delete',
         ]);
 
@@ -28,7 +28,7 @@ class RoleFixtures extends Fixture
         $role2->setNodes([
             'app_user',
             'app_user_new',
-            'app_user_eidt',
+            'app_user_edit',
             'app_user_delete',
         ]);
 

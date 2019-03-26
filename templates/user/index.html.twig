@@ -24,8 +24,8 @@
       <td>{{ entity.role.name }}</td>
       <td>{{ entity.createdAt|date('Y/m/ H:i:s') }}</td>
       <td>
-        {% if is_granted('app_user_eidt') %}
-          <a href="{{ path('app_user_eidt', {id: entity.id}) }}" class="btn btn-primary btn-sm">修改</a>
+        {% if is_granted('app_user_edit') %}
+          <a href="{{ path('app_user_edit', {id: entity.id}) }}" class="btn btn-primary btn-sm">修改</a>
         {% else %}
           <a href="#"  class="btn btn-primary btn-sm disabled">修改</a>
         {% endif %}

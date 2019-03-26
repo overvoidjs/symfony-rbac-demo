@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca68aad201e53eff85160e888a4934ea",
+    "content-hash": "90f58214f42f9f24b2866cd29da60f16",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1047,45 +1047,6 @@
                 "reflection"
             ],
             "time": "2018-06-14T14:45:07+00:00"
-        },
-        {
-            "name": "eb22fbb4/rbac-bundle",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/eb22fbb4/rbac-bundle.git",
-                "reference": "4e057c08a842485a3b336faf6a06bb25bebe4166"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/eb22fbb4/rbac-bundle/zipball/4e057c08a842485a3b336faf6a06bb25bebe4166",
-                "reference": "4e057c08a842485a3b336faf6a06bb25bebe4166",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/form": "^4.2",
-                "symfony/framework-bundle": "^4.2",
-                "symfony/options-resolver": "^4.2",
-                "symfony/security-bundle": "^4.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Eb22fbb4\\Bundle\\RBACBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "eb22fbb4",
-                    "email": "eb22fbb4@gmail.com"
-                }
-            ],
-            "description": "RBAC bundle for symfony 4",
-            "time": "2019-03-26T08:32:36+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -4704,9 +4665,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "eb22fbb4/rbac-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
