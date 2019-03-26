@@ -1054,12 +1054,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eb22fbb4/rbac-bundle.git",
-                "reference": "42f23758001c988392b632a4ec4fa6a3e31059ec"
+                "reference": "4e057c08a842485a3b336faf6a06bb25bebe4166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eb22fbb4/rbac-bundle/zipball/42f23758001c988392b632a4ec4fa6a3e31059ec",
-                "reference": "42f23758001c988392b632a4ec4fa6a3e31059ec",
+                "url": "https://api.github.com/repos/eb22fbb4/rbac-bundle/zipball/4e057c08a842485a3b336faf6a06bb25bebe4166",
+                "reference": "4e057c08a842485a3b336faf6a06bb25bebe4166",
                 "shasum": ""
             },
             "require": {
@@ -1085,7 +1085,7 @@
                 }
             ],
             "description": "RBAC bundle for symfony 4",
-            "time": "2019-03-22T05:57:43+00:00"
+            "time": "2019-03-26T08:32:36+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
