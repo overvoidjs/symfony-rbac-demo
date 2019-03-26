@@ -19,11 +19,11 @@ framework:
     php_errors:
         log: true
 
-rbac:
-    firewall_pattern: ^/
-    ignore_routes:
-        - _twig_error_test
-    anonymously_routes:
-        - app_index
-        - app_login
-        - app_logout
+# rbac:
+#     firewall_pattern: ^/
+#     ignore_routes:
+#         - _twig_error_test
+#     anonymously_routes:
+#         - app_index
+#         - app_login
+#         - app_logout
