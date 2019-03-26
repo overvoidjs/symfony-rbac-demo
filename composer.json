@@ -7,6 +7,7 @@
         "ext-iconv": "*",
         "doctrine/doctrine-bundle": "^1.10",
         "doctrine/orm": "^2.6",
+        "eb22fbb4/rbac-bundle": "dev-master",
         "knplabs/knp-menu-bundle": "^2.2",
         "symfony/console": "4.2.*",
         "symfony/dotenv": "4.2.*",
@@ -37,8 +38,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
-            "Eb22fbb4\\Bundle\\RBACBundle\\": "../bundle/rbac-bundle/src/"
+            "App\\": "src/"
         }
     },
     "autoload-dev": {
