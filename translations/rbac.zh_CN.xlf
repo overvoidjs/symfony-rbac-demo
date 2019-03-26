@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="zh-CN" target-language="zh-CN" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="app_index">
+        <source>app_index</source>
+        <target>RBAC</target>
+      </trans-unit>
+      <trans-unit id="app_login">
+        <source>app_login</source>
+        <target>RBAC / 登录</target>
+      </trans-unit>
+      <trans-unit id="app_logout">
+        <source>app_logout</source>
+        <target>RBAC / 退出</target>
+      </trans-unit>
+      <trans-unit id="app_role">
+        <source>app_role</source>
+        <target>RBAC / 角色</target>
+      </trans-unit>
+      <trans-unit id="app_role_new">
+        <source>app_role_new</source>
+        <target>RBAC / 角色 / 新增角色</target>
+      </trans-unit>
+      <trans-unit id="app_role_edit">
+        <source>app_role_edit</source>
+        <target>RBAC / 角色 / 编辑角色</target>
+      </trans-unit>
+      <trans-unit id="app_role_delete">
+        <source>app_role_delete</source>
+        <target>RBAC / 角色 / 删除角色</target>
+      </trans-unit>
+      <trans-unit id="app_user">
+        <source>app_user</source>
+        <target>RBAC / 用户</target>
+      </trans-unit>
+      <trans-unit id="app_user_new">
+        <source>app_user_new</source>
+        <target>RBAC / 用户 / 新增用户</target>
+      </trans-unit>
+      <trans-unit id="app_user_edit">
+        <source>app_user_edit</source>
+        <target>RBAC / 用户 / 编辑用户</target>
+      </trans-unit>
+      <trans-unit id="app_user_delete">
+        <source>app_user_delete</source>
+        <target>RBAC / 用户 / 删除用户</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
