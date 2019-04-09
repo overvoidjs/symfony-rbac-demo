@@ -2,15 +2,17 @@
 
 namespace App\Entity;
 
+use Eb22fbb4\Bundle\RBACBundle\Model\RoleableTrait;
+use Eb22fbb4\Bundle\RBACBundle\Model\RoleableInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\RoleRepository")
  */
-class Role implements ResourceInterface, TimestampableInterface
+class Role implements ResourceInterface, RoleableInterface, TimestampableInterface
 {
-    use ResourceTrait, TimestampableTrait;
+    use ResourceTrait, RoleableTrait, TimestampableTrait;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -18,11 +20,6 @@ class Role implements ResourceInterface, TimestampableInterface
      * @Assert\NotBlank()
      */
     private $name;
-
-    /**
-     * @ORM\Column(type="json")
-     */
-    private $nodes = [];
 
     public function getName(): ?string
     {
@@ -32,18 +29,6 @@ class Role implements ResourceInterface, TimestampableInterface
     public function setName(string $name): self
     {
         $this->name = $name;
-
-        return $this;
-    }
-
-    public function getNodes(): ?array
-    {
-        return $this->nodes;
-    }
-
-    public function setNodes(array $nodes): self
-    {
-        $this->nodes = $nodes;
 
         return $this;
     }
