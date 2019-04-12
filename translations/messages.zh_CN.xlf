@@ -37,8 +37,8 @@
         <source>resource.user.role</source>
         <target>用户角色</target>
       </trans-unit>
-      <trans-unit id="6cmZbDY" resname="resource.user.identifier">
-        <source>resource.user.identifier</source>
+      <trans-unit id="3UvtH4k" resname="resource.user.username">
+        <source>resource.user.username</source>
         <target>用户名</target>
       </trans-unit>
       <trans-unit id="hb4QwqC" resname="resource.user.password">

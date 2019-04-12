@@ -3,15 +3,15 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Component\Security\Core\User\UserInterface;
-use Symfony\Component\Security\Core\User\EquatableInterface;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Security\Core\User\EquatableInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  *
- * @UniqueEntity(fields={"identifier"}, groups={"identifier"})
+ * @UniqueEntity(fields={"username"}, groups={"username"})
  */
 class User implements ResourceInterface, TimestampableInterface, UserInterface, EquatableInterface
 {
@@ -27,11 +27,11 @@ class User implements ResourceInterface, TimestampableInterface, UserInterface, 
     /**
      * @ORM\Column(type="string", length=255)
      *
-     * @Assert\NotBlank(groups={"identifier"})
-     * @Assert\Length(min=4, max=16, groups={"identifier"})
-     * @Assert\Regex(pattern="/[0-9A-Za-z._-]$/", groups={"identifier"})
+     * @Assert\NotBlank(groups={"username"})
+     * @Assert\Length(min=4, max=16, groups={"username"})
+     * @Assert\Regex(pattern="/[0-9A-Za-z._-]$/", groups={"username"})
      */
-    private $identifier;
+    private $username;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -55,14 +55,14 @@ class User implements ResourceInterface, TimestampableInterface, UserInterface, 
         return $this;
     }
 
-    public function getIdentifier(): ?string
+    public function getUsername(): ?string
     {
-        return $this->identifier;
+        return $this->username;
     }
 
-    public function setIdentifier(string $identifier): self
+    public function setUsername(string $username): self
     {
-        $this->identifier = $identifier;
+        $this->username = $username;
 
         return $this;
     }
@@ -98,11 +98,6 @@ class User implements ResourceInterface, TimestampableInterface, UserInterface, 
 
     public function getSalt()
     {
-    }
-
-    public function getUsername()
-    {
-        return $this->identifier;
     }
 
     public function eraseCredentials()

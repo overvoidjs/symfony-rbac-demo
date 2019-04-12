@@ -3,10 +3,10 @@
 namespace App\Doctrine\EventListener;
 
 use App\Entity\TimestampableInterface;
-use Doctrine\ORM\Events;
 use Doctrine\Common\EventSubscriber;
-use Doctrine\ORM\Event\PreUpdateEventArgs;
 use Doctrine\ORM\Event\LifecycleEventArgs;
+use Doctrine\ORM\Event\PreUpdateEventArgs;
+use Doctrine\ORM\Events;
 
 class TimestampableSubscriber implements EventSubscriber
 {

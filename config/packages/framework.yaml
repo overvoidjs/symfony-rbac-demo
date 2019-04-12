@@ -21,7 +21,8 @@ framework:
 
 rbac:
     firewall_pattern: ^/
-    anonymously_routes:
+    fully_routes:
         - app_index
+    anonymously_routes:
         - app_login
         - app_logout

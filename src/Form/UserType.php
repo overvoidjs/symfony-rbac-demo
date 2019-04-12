@@ -3,18 +3,18 @@
 namespace App\Form;
 
 use App\Entity\User;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\FormInterface;
-use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
-use Symfony\Component\Validator\Constraints\Regex;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
-use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Validator\Constraints\Regex;
 
 class UserType extends AbstractType
 {
@@ -28,8 +28,8 @@ class UserType extends AbstractType
                 'placeholder' => '_choice',
                 'attr' => ['autofocus' => 'autofocus'],
             ])
-            ->add('identifier', TextType::class, [
-                'label' => 'resource.user.identifier',
+            ->add('username', TextType::class, [
+                'label' => 'resource.user.username',
             ])
             ->add('plainPassword', RepeatedType::class, [
                 'first_options' => ['label' => 'resource.user.password'],
@@ -54,7 +54,7 @@ class UserType extends AbstractType
             'attr' => ['novalidate' => 'novalidate'],
             'validation_groups' => function (FormInterface $form) {
                 $data = $form->getData();
-                $groups = ['role', 'identifier'];
+                $groups = ['role', 'username'];
                 if (null !== $data->getPlainPassword() || $data->isNew()) {
                     array_push($groups, 'plainPassword');
                 }

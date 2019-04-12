@@ -20,15 +20,15 @@ class UserFixtures extends Fixture implements DependentFixtureInterface
     public function load(ObjectManager $manager)
     {
         $user1 = new User();
-        $user1->setIdentifier('admin');
+        $user1->setUsername('admin');
         $user1->setRole($this->getReference('role1'));
 
         $user2 = new User();
-        $user2->setIdentifier('zhangsan');
+        $user2->setUsername('zhangsan');
         $user2->setRole($this->getReference('role2'));
 
         $user3 = new User();
-        $user3->setIdentifier('lisi');
+        $user3->setUsername('lisi');
         $user3->setRole($this->getReference('role3'));
 
         $this->applyPassword($user1);

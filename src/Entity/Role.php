@@ -2,9 +2,9 @@
 
 namespace App\Entity;
 
-use Eb22fbb4\Bundle\RBACBundle\Model\RoleableTrait;
-use Eb22fbb4\Bundle\RBACBundle\Model\RoleableInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Eb22fbb4\Bundle\RBACBundle\Model\RoleableInterface;
+use Eb22fbb4\Bundle\RBACBundle\Model\RoleableTrait;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
