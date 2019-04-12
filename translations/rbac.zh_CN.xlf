@@ -23,15 +23,15 @@
       </trans-unit>
       <trans-unit id="MZZSJ6F" resname="app_role_new">
         <source>app_role_new</source>
-        <target>RBAC / 角色 / 新增角色</target>
+        <target>RBAC / 角色 / 新增</target>
       </trans-unit>
       <trans-unit id="F4KpYzS" resname="app_role_edit">
         <source>app_role_edit</source>
-        <target>RBAC / 角色 / 编辑角色</target>
+        <target>RBAC / 角色 / 编辑</target>
       </trans-unit>
       <trans-unit id=".ZXC9eD" resname="app_role_delete">
         <source>app_role_delete</source>
-        <target>RBAC / 角色 / 删除角色</target>
+        <target>RBAC / 角色 / 删除</target>
       </trans-unit>
       <trans-unit id="WErRkaP" resname="app_user">
         <source>app_user</source>
@@ -39,15 +39,15 @@
       </trans-unit>
       <trans-unit id="cfJI_GK" resname="app_user_new">
         <source>app_user_new</source>
-        <target>RBAC / 用户 / 新增用户</target>
+        <target>RBAC / 用户 / 新增</target>
       </trans-unit>
       <trans-unit id="tNTvlza" resname="app_user_edit">
         <source>app_user_edit</source>
-        <target>RBAC / 用户 / 编辑用户</target>
+        <target>RBAC / 用户 / 编辑</target>
       </trans-unit>
       <trans-unit id="dGwWhS9" resname="app_user_delete">
         <source>app_user_delete</source>
-        <target>RBAC / 用户 / 删除用户</target>
+        <target>RBAC / 用户 / 删除</target>
       </trans-unit>
     </body>
   </file>
