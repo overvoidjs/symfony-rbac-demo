@@ -1,19 +1,26 @@
 <?php
 
-$finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__.'/src');
+if (!file_exists(__DIR__.'/src')) {
+    exit(0);
+}
 
 return PhpCsFixer\Config::create()
     ->setRules([
         '@Symfony' => true,
         '@Symfony:risky' => true,
+        '@PHPUnit48Migration:risky' => true,
+        'php_unit_no_expectation_annotation' => false,
         'array_syntax' => ['syntax' => 'short'],
-        'linebreak_after_opening_tag' => true,
-        'mb_str_functions' => true,
-        'strict_comparison' => true,
-        'strict_param' => true,
+        'fopen_flags' => false,
+        'ordered_imports' => true,
+        'protected_to_private' => false,
+        'native_function_invocation' => ['include' => ['@compiler_optimized'], 'scope' => 'namespaced'],
+        'phpdoc_types_order' => ['null_adjustment' => 'always_last', 'sort_algorithm' => 'none'],
     ])
     ->setRiskyAllowed(true)
     ->setUsingCache(false)
-    ->setFinder($finder)
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+            ->in(__DIR__.'/src')
+    )
 ;
